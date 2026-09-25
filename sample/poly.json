@@ -1,0 +1,5 @@
+{
+  "degenerate_code": "E_DEGENERATE",
+  "rule": "evenodd",
+  "points": [[0, 0], [6, 0], [6, 4], [3, 2], [0, 4]]
+}
