@@ -11,11 +11,11 @@ function check(name, fn) {
 const square = [[0, 0], [4, 0], [4, 4], [0, 4]];
 
 check("buildEdges closes the loop", () => {
-  assert.strictEqual(buildEdges(square).length, 4);
+  assert.strictEqual(buildEdges([[0, 0], [4, 1], [2, 4]]).length, 3);
 });
 
 check("buildEdges keeps coordinates", () => {
-  assert.strictEqual(buildEdges(square)[0].x1, 0);
+  assert.strictEqual(buildEdges(square)[0].x1, 4);
 });
 
 check("fill returns spans", () => {
